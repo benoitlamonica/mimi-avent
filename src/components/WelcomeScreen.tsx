@@ -11,7 +11,7 @@ export const WelcomeScreen = ({ onStart }: WelcomeScreenProps) => {
           Calendrier de l&apos;Avent
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-12">
-          24 jours de surprises et d&apos;amour ✨
+          24 jours de surprises ✨
         </p>
         <button
           onClick={onStart}
