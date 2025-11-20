@@ -42,6 +42,34 @@
   }
 }
 
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fly-across {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px));
+    opacity: 0;
+  }
+}
+
 .animate-fade-in {
   animation: fade-in 0.3s ease-out;
 }
@@ -56,6 +84,20 @@
 
 .animate-pulse-slow {
   animation: pulse-slow 2s ease-in-out infinite;
+}
+
+.animate-confetti {
+  animation: confetti forwards;
+  font-size: 1.5rem;
+}
+
+.animate-fly-across {
+  animation: fly-across 12s linear infinite;
+}
+
+.animate-fly-across-delayed {
+  animation: fly-across 15s linear infinite;
+  animation-delay: 3s;
 }
 
 .rotate-y-180 {

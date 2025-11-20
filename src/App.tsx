@@ -8,6 +8,7 @@ interface Gift {
   id: number;
   name: string;
   description: string;
+  action: string;
 }
 
 const STORAGE_KEY = 'advent-calendar-opened-boxes';
@@ -88,14 +89,20 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-pink-50 via-purple-50 to-indigo-50 p-4 md:p-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-linear-to-br from-orange-100 via-white to-red-100 p-4 md:p-8 relative overflow-hidden">
+      <div className="absolute top-10 animate-fly-across">
+        <span className="text-4xl">🦌</span>
+      </div>
+      <div className="absolute top-32 animate-fly-across-delayed">
+        <span className="text-3xl">🦌</span>
+      </div>
+      <div className="max-w-7xl mx-auto relative z-10">
         <header className="text-center mb-8 md:mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-pink-600 to-purple-600 mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-red-700 via-orange-600 to-red-700 mb-4">
             🎄 {import.meta.env.VITE_APP_NAME} 🎄
           </h1>
-          <p className="text-lg md:text-xl text-gray-600">
-            Découvre une surprise chaque jour jusqu&apos;à Noël ✨
+          <p className="text-lg md:text-xl text-transparent bg-clip-text bg-linear-to-r from-orange-700 to-red-700">
+            Découvre une surprise chaque jour jusqu&apos;à Noël ❄️
           </p>
         </header>
 
@@ -112,7 +119,7 @@ function App() {
         </div>
       </div>
 
-      <GiftModal gift={selectedGift} onClose={handleCloseModal} />
+      <GiftModal key={selectedGift?.id} gift={selectedGift} onClose={handleCloseModal} />
     </div>
   );
 }

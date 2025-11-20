@@ -2,6 +2,7 @@ interface Gift {
   id: number;
   name: string;
   description: string;
+  action: string;
 }
 
 export const useGifts = (): Gift[] => {
@@ -9,122 +10,146 @@ export const useGifts = (): Gift[] => {
     {
       id: 1,
       name: "Chocolat chaud",
-      description: "Je prépare un chocolat chaud maison. Action : installe-toi sous une couverture, je m'occupe du reste."
+      description: "Je prépare un chocolat chaud maison.",
+      action: "Installe-toi sous une couverture, je m'occupe du reste."
     },
     {
       id: 2,
       name: "Je fais la vaisselle",
-      description: "Je prends la vaisselle ce soir. Action : profite de la table propre sans lever le petit doigt."
+      description: "Je prends la vaisselle ce soir.",
+      action: "Profite de la table propre sans lever le petit doigt."
     },
     {
       id: 3,
       name: "Massage express",
-      description: "Massage des épaules de 5 minutes. Action : mets-toi à l'aise, je m'occupe de la tension."
+      description: "Massage des épaules de 5 minutes.",
+      action: "Mets-toi à l'aise, je m'occupe de la tension."
     },
     {
       id: 4,
       name: "Ton plat",
-      description: "Je cuisine le plat de ton choix ce soir. Action : dis-moi ce que tu veux et je m'occupe des ingrédients."
+      description: "Je cuisine le plat de ton choix ce soir.",
+      action: "Dis-moi ce que tu veux et je m'occupe des ingrédients."
     },
     {
       id: 5,
-      name: "Biscuits chauds",
-      description: "Je prépare des biscuits maison. Action : garde un espace pour la dégustation — ou prends tout, je comprendrais."
+      name: "Masque gourmand",
+      description: "Je te prépare un masque visage maison.",
+      action: "Installe-toi confortablement, je t'apporte tout le nécessaire. Et je participe !"
     },
     {
       id: 6,
-      name: "Concours de blagues",
-      description: "On échange nos pires blagues. Action : envoie ta meilleure blague, je riposterai avec la mienne (la plus nulle possible)."
+      name: "Scéance de sport",
+      description: "Je créer pour toi une séance de sport rapide.",
+      action: "Suis-moi pendant 15 minutes, on bouge ensemble."
     },
     {
       id: 7,
       name: "Mini déco",
-      description: "Je pose une petite déco qui change l'ambiance. Action : choisis où tu veux que je la mette."
+      description: "Je pose une petite déco qui change l'ambiance.",
+      action: "Choisis ta déco, et dis-moi où tu veux que je la mette."
     },
     {
       id: 8,
       name: "Café du matin",
-      description: "Je te prépare le café du matin. Action : dis comment tu le veux et je te l'apporte (ou photo si à distance)."
+      description: "Je t'offre le petit déjeuner au carnaval, comme à l'ancienne.",
+      action: "A toi de choisir ce que tu veux."
     },
     {
       id: 9,
       name: "Danse 5 min",
-      description: "Danse cinq minutes sur ta chanson préférée. Action : lance la musique, je t'envoie un GIF pour applaudir."
+      description: "Danse cinq minutes sur ta chanson préférée.",
+      action: "Lance la musique, je t'envoie un GIF pour applaudir."
     },
     {
       id: 10,
       name: "Petit soin",
-      description: "Je gère une corvée pour toi (aspirateur, linge ou vaisselle). Action : choisis la corvée, je m'en charge."
+      description: "Je gère une corvée pour toi (aspirateur, linge ou vaisselle).",
+      action: "Choisis la corvée, je m'en charge."
     },
     {
       id: 11,
-      name: "Farce douce",
-      description: "Je prépare une farce légère pour te surprendre. Action : reste prête à rigoler et garde ton téléphone à portée."
+      name: "Oui",
+      description: "Je dis oui à une de tes demandes (raisonnables hihi) aujourd'hui.",
+      action: "Fais ta demande, je ne dirai pas non !"
     },
     {
       id: 12,
-      name: "Photo du coin",
-      description: "Prends une photo d'un coin que tu trouves joli aujourd'hui. Action : envoie-la, je te dis pourquoi je l'aime (en bref)."
+      name: "Mario Kart",
+      description: "On fait une course de Mario Kart ensemble.",
+      action: "Celui qui perd doit tourner une vidéo où il chante une chanson ridicule et la poste sur les réseaux."
     },
     {
       id: 13,
       name: "Dessert maison",
-      description: "Je fais un dessert simple ce soir. Action : donne-moi une préférence (chocolat, fruit, ou surprise)."
+      description: "Je fais un dessert simple ce soir.",
+      action: "Donne-moi une préférence (chocolat, fruit, ou surprise)."
     },
     {
       id: 14,
-      name: "Playlist rapide",
-      description: "Je crée une playlist de 6 titres pour toi. Action : envoie trois titres que tu veux dedans."
+      name: "Sapin de Noël",
+      description: "Aujourd'hui c'est journée Sapin !",
+      action: "On décore ensemble le sapin de Noël, avec du chocolat chaud et des biscuits."
     },
     {
       id: 15,
       name: "Selfie clin",
-      description: "Envoie un selfie clin d'oeil. Action : je réponds avec un selfie encore plus ridicule."
+      description: "Envoie un selfie clin d'oeil.",
+      action: "Attention je réponds avec un selfie encore plus ridicule."
     },
     {
       id: 16,
-      name: "Photo manteau",
-      description: "Porte ton manteau préféré aujourd'hui et envoie une photo. Action : je te renvoie un compliment court et sincère."
+      name: "L'essence",
+      description: "Ceci est un chèque cadeau de 10 euros pour l'essence.",
+      action: "Utilise-le quand tu en as besoin."
     },
     {
       id: 17,
       name: "Note vocale",
-      description: "Je t'envoie une note vocale drôle à écouter quand tu veux. Action à distance : écoute-la quand tu as besoin d'un sourire."
+      description: "Je t'envoie une note vocale drôle à écouter quand tu veux.",
+      action: "Écoute-la quand tu as besoin d'un sourire."
     },
     {
       id: 18,
       name: "Balade en visio",
-      description: "Appel vidéo pendant la balade pour me montrer ta rue. Action à distance : fais le tour et commente en direct."
+      description: "Appel vidéo pendant la balade pour me montrer ta rue.",
+      action: "Fais le tour et commente en direct."
     },
     {
       id: 19,
       name: "Playlist surprise",
-      description: "Je t'envoie une playlist surprise pour la journée. Action à distance : écoute-la et dis-moi ton morceau préféré."
+      description: "Aujourd'hui c'est toi qui décide ce que j'écoute.",
+      action: "Envoie-moi 5 chansons à ajouter à ma playlist."
     },
     {
       id: 20,
-      name: "Livraison gourmande",
-      description: "Je commande un petit plaisir chez toi (pâtisserie ou snack). Action à distance : dis-moi ton adresse et je m'occupe de la surprise."
+      name: "Les fleurs",
+      description: "Tu as gagné des belle fleurs, virtuelles ou réelles selon la distance.",
+      action: "Reçois une photo de fleurs fraîches."
     },
     {
       id: 21,
       name: "Chasse photo",
-      description: "Je te donne 3 objets à trouver et photographier. Action à distance : envoie les photos dans la journée."
+      description: "Je te donne 3 objets à trouver et photographier.",
+      action: "Envoie les photos dans la journée."
     },
     {
       id: 22,
       name: "Recette test",
-      description: "Je t'envoie une recette simple à tester. Action à distance : cuis-la et envoie une photo du résultat."
+      description: "Je t'envoie une recette simple à tester.",
+      action: "Cuis-la et envoie une photo du résultat."
     },
     {
       id: 23,
-      name: "Film synchronisé",
-      description: "On regarde le même film au même moment et on commente. Action à distance : choisis le film, on lance en même temps."
+      name: "Film",
+      description: "Aujourd'hui tu choisis le film que je regarde. Et j'suis obligé de le regarder jusqu'au bout !",
+      action: "Envoie-moi le titre du film."
     },
     {
       id: 24,
       name: "Merci + surprise",
-      description: "Je t'envoie un message court et une petite surprise digitale. Action à distance : lis et profite de la surprise."
+      description: "Merci d'avoir suivi ce calendrier virtuel.",
+      action: "Envoie moi ce message : 'Boubou président !' et tu recevras une petite surprise."
     },
   ];
 };
