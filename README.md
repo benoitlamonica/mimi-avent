@@ -1,6 +1,6 @@
 # 🎄 Calendrier de l'Avent
 
-A beautiful, modern advent calendar built with React, TypeScript, Vite, and Tailwind CSS.
+A beautiful, modern advent calendar built with React, TypeScript, Vite, and Tailwind CSS. Available as both a web app and a native desktop application with Electron.
 
 ## ✨ Features
 
@@ -11,6 +11,7 @@ A beautiful, modern advent calendar built with React, TypeScript, Vite, and Tail
 - 🌈 Beautiful gradient designs
 - ⚡ Fast development with Vite
 - 🔒 Date-based unlocking in production
+- 🖥️ Native desktop app with custom Christmas tree icon
 
 ## 🚀 Getting Started
 
@@ -18,25 +19,77 @@ A beautiful, modern advent calendar built with React, TypeScript, Vite, and Tail
 
 - Node.js 20.19+ or 22.12+ (recommended)
 - Yarn or npm
+- nvm (for Node version management)
 
 ### Installation
 
 ```bash
+# Use the correct Node version
+nvm use 22
+
 # Install dependencies
 yarn install
 
-# Start development server
+# Start development server (web)
 yarn dev
 
-# Build for production
+# Start Electron app (desktop)
+yarn electron:dev
+
+# Build for production (web)
 yarn build
 
-# Preview production build
+# Build desktop app
+yarn electron:build
+
+# Preview production build (web)
 yarn preview
 
 # Run linter
 yarn lint
+
+# Generate icons
+yarn icons
 ```
+
+## 🖥️ Electron Desktop App
+
+The project now includes an Electron wrapper for a native desktop experience.
+
+### Development Mode
+
+```bash
+nvm use 22
+yarn electron:dev
+```
+
+This will:
+- Start the Vite dev server
+- Launch the Electron app
+- Enable hot reload for both React and Electron code
+- Open DevTools automatically
+
+### Building Desktop App
+
+```bash
+nvm use 22
+yarn electron:build
+```
+
+This creates distributable packages for:
+- **macOS**: `.dmg` and `.zip` files
+- **Windows**: `.exe` installer and portable version
+- **Linux**: `.AppImage` and `.deb` packages
+
+Output will be in the `release/` directory.
+
+### Custom Icon
+
+The app features a custom Christmas tree icon:
+- 🎄 Green Christmas tree with ornaments and star
+- Available in all required formats (`.png`, `.icns`, `.ico`)
+- Located in `build/` directory
+- Regenerate with `yarn icons`
 
 ## ⚙️ Environment Variables
 

@@ -4,6 +4,29 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+/* Hide scrollbars */
+body {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Electron drag region support */
+.draggable {
+  -webkit-app-region: drag;
+}
+
+.non-draggable {
+  -webkit-app-region: no-drag;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
