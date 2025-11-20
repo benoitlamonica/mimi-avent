@@ -7,7 +7,7 @@ import tailwindcss from 'eslint-plugin-tailwindcss'
 import tseslint from 'typescript-eslint'
 
 export default [
-  { ignores: ['dist'] },
+  { ignores: ['dist', 'dist-electron', 'release', 'scripts'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
