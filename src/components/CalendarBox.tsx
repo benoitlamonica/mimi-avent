@@ -32,30 +32,31 @@ export const CalendarBox = ({
       type="button"
       disabled={!isUnlocked}
       className={`
-        relative aspect-square
-        transition-transform duration-300 hover:scale-105
-        ${!isUnlocked ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer'}
+        relative aspect-square group
+        transition-all duration-300
+        ${!isUnlocked ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer hover:scale-105'}
       `}
       onClick={handleClick}
     >
       <div
         className={`
-          w-full h-full rounded-2xl border-4
+          w-full h-full rounded-xl backdrop-blur-md
           ${isOpened 
-      ? 'bg-linear-to-br from-orange-500 to-orange-600 border-orange-700 shadow-lg shadow-orange-500/50' 
-      : 'bg-linear-to-br from-red-600 to-red-700 border-gray-900 shadow-lg shadow-red-500/50'
+      ? 'bg-zinc-100/10' 
+      : 'bg-white/10 group-hover:bg-red-50/80 group-hover:shadow-lg group-hover:shadow-red-100'
     }
-          shadow-xl hover:shadow-2xl
+          shadow-sm
           flex flex-col items-center justify-center
-          transition-all duration-500
-          ${isFlipping && !isOpened ? 'scale-110 rotate-12' : 'scale-100 rotate-0'}
+          transition-all duration-300
+          ${isFlipping && !isOpened ? 'scale-95 rotate-3' : 'scale-100 rotate-0'}
         `}
       >
-        <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
+        <div
+          className={`text-3xl md:text-4xl lg:text-5xl font-light ${
+            isOpened ? 'text-red-600' : 'text-zinc-800 group-hover:text-red-600'
+          }`}
+        >
           {isOpened ? '✓' : gift.id}
-        </div>
-        <div className="text-xs md:text-sm text-white font-semibold mt-2">
-          {isOpened ? '❄️ Ouvert' : isUnlocked ? '🎁 Ouvrir' : '🔒 Bientôt'}
         </div>
       </div>
     </button>

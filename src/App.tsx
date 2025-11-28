@@ -89,23 +89,79 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-orange-100 via-white to-red-100 p-4 md:p-8 relative overflow-auto">
+    <div className="min-h-screen bg-zinc-50 p-4 md:p-8 relative overflow-auto">
       {/* Draggable area for frameless window */}
       <div className="fixed top-0 left-0 right-0 h-16 z-50 draggable" />
       
-      <div className="absolute top-10 animate-fly-across non-draggable pointer-events-none">
-        <span className="text-4xl">🦌</span>
+      {/* Falling hearts decoration */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-50">
+        <div className="absolute left-[10%] text-2xl text-red-300 animate-fall-slow" style={{ animationDelay: '0s' }}>❤️</div>
+        <div
+          className="absolute left-[25%] text-xl text-red-200 animate-fall-slow"
+          style={{
+            animationDelay: '2s',
+            animationDuration: '12s' 
+          }}
+        >❤️
+        </div>
+        <div
+          className="absolute left-[40%] text-3xl text-red-300 animate-fall-slow"
+          style={{
+            animationDelay: '5s',
+            animationDuration: '14s' 
+          }}
+        >❤️
+        </div>
+        <div
+          className="absolute left-[55%] text-2xl text-red-200 animate-fall-slow"
+          style={{
+            animationDelay: '1s',
+            animationDuration: '11s' 
+          }}
+        >❤️
+        </div>
+        <div
+          className="absolute left-[70%] text-xl text-red-300 animate-fall-slow"
+          style={{
+            animationDelay: '3.5s',
+            animationDuration: '13s' 
+          }}
+        >❤️
+        </div>
+        <div
+          className="absolute left-[85%] text-2xl text-red-200 animate-fall-slow"
+          style={{
+            animationDelay: '0.5s',
+            animationDuration: '11.5s' 
+          }}
+        >❤️
+        </div>
+        <div
+          className="absolute left-[15%] text-xl text-red-300 animate-fall-slow"
+          style={{
+            animationDelay: '6s',
+            animationDuration: '15s' 
+          }}
+        >🎄
+        </div>
+        <div
+          className="absolute left-[65%] text-2xl text-red-200 animate-fall-slow"
+          style={{
+            animationDelay: '4s',
+            animationDuration: '12.5s' 
+          }}
+        >🎄
+        </div>
       </div>
-      <div className="absolute top-32 animate-fly-across-delayed non-draggable pointer-events-none">
-        <span className="text-3xl">🦌</span>
-      </div>
-      <div className="max-w-7xl mx-auto relative z-10 non-draggable w-full py-2">
-        <header className="text-center mb-6 md:mb-8">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-red-700 via-orange-600 to-red-700 mb-3">
-            🎄 {import.meta.env.VITE_APP_NAME} 🎄
+      
+      <div className="max-w-6xl mx-auto relative z-10 non-draggable w-full py-2">
+        <header className="text-center mb-6 md:mb-12">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight mb-2">
+            <span className="text-zinc-800">{import.meta.env.VITE_APP_NAME.split(' ')[0]} </span>
+            <span className="text-red-600">{import.meta.env.VITE_APP_NAME.split(' ').slice(1).join(' ')}</span>
           </h1>
-          <p className="text-base md:text-lg xl:text-xl text-transparent bg-clip-text bg-linear-to-r from-orange-700 to-red-700">
-            Découvre une surprise chaque jour jusqu&apos;à Noël ❄️
+          <p className="text-sm md:text-base text-zinc-500">
+            Décembre 2025 • 24 surprises
           </p>
         </header>
 

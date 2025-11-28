@@ -89,6 +89,23 @@
   }
 }
 
+@keyframes fall-slow {
+  0% {
+    transform: translateY(-20vh) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.6;
+  }
+  95% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(120vh) rotate(180deg);
+    opacity: 0;
+  }
+}
+
 .animate-fade-in {
   animation: fade-in 0.3s ease-out;
 }
@@ -117,6 +134,10 @@
 .animate-fly-across-delayed {
   animation: fly-across 15s linear infinite;
   animation-delay: 3s;
+}
+
+.animate-fall-slow {
+  animation: fall-slow 10s linear infinite;
 }
 
 .rotate-y-180 {
