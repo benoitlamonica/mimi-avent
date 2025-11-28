@@ -9,8 +9,8 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "electron:dev": "vite",
-    "electron:build": "vite build && electron-builder",
+    "electron:dev": "ELECTRON=true vite",
+    "electron:build": "ELECTRON=true vite build && electron-builder",
     "icons": "node scripts/generate-icons.mjs && node scripts/generate-windows-icon.mjs && ./scripts/generate-mac-icon.sh"
   },
   "build": {

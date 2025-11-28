@@ -89,27 +89,27 @@ function App() {
   }
 
   return (
-    <div className="h-screen bg-linear-to-br from-orange-100 via-white to-red-100 p-4 md:p-8 relative overflow-hidden flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-orange-100 via-white to-red-100 p-4 md:p-8 relative overflow-auto">
       {/* Draggable area for frameless window */}
       <div className="fixed top-0 left-0 right-0 h-16 z-50 draggable" />
       
-      <div className="absolute top-10 animate-fly-across non-draggable">
+      <div className="absolute top-10 animate-fly-across non-draggable pointer-events-none">
         <span className="text-4xl">🦌</span>
       </div>
-      <div className="absolute top-32 animate-fly-across-delayed non-draggable">
+      <div className="absolute top-32 animate-fly-across-delayed non-draggable pointer-events-none">
         <span className="text-3xl">🦌</span>
       </div>
-      <div className="max-w-7xl mx-auto relative z-10 non-draggable flex-1 flex flex-col justify-center w-full">
+      <div className="max-w-7xl mx-auto relative z-10 non-draggable w-full py-2">
         <header className="text-center mb-6 md:mb-8">
-          <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-linear-to-r from-red-700 via-orange-600 to-red-700 mb-3">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-red-700 via-orange-600 to-red-700 mb-3">
             🎄 {import.meta.env.VITE_APP_NAME} 🎄
           </h1>
-          <p className="text-base md:text-lg text-transparent bg-clip-text bg-linear-to-r from-orange-700 to-red-700">
+          <p className="text-base md:text-lg xl:text-xl text-transparent bg-clip-text bg-linear-to-r from-orange-700 to-red-700">
             Découvre une surprise chaque jour jusqu&apos;à Noël ❄️
           </p>
         </header>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 md:gap-3 lg:gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
           {gifts.map((gift) => (
             <CalendarBox
               key={gift.id}

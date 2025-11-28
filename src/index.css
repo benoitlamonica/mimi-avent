@@ -4,11 +4,7 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-/* Hide scrollbars */
-body {
-  overflow: hidden;
-}
-
+/* Hide scrollbars but allow scrolling */
 ::-webkit-scrollbar {
   display: none;
 }
