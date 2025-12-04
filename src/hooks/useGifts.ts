@@ -93,7 +93,7 @@ export const useGifts = (): Gift[] => {
     },
     {
       id: 15,
-      name: "Selfie clin",
+      name: "Selfie",
       description: "Envoie un selfie clin d'oeil.",
       action: "Attention je réponds avec un selfie encore plus ridicule."
     },
