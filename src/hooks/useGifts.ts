@@ -33,15 +33,15 @@ export const useGifts = (): Gift[] => {
     },
     {
       id: 5,
-      name: "Masque gourmand",
-      description: "Je te prépare un masque visage maison.",
-      action: "Installe-toi confortablement, je t'apporte tout le nécessaire. Et je participe !"
+      name: "Surprise...",
+      description: "La belle surprise du jour !",
+      action: "Comme tu pars dans le béarn ce soir, attends moi avant de partir, je t'apporte un petit quelque chose...A ce soir mon coeur ❤️"
     },
     {
       id: 6,
-      name: "Scéance de sport",
-      description: "Je créer pour toi une séance de sport rapide.",
-      action: "Suis-moi pendant 15 minutes, on bouge ensemble."
+      name: "Un petit mot",
+      description: "Mon coeur, je t'écris un petit mot doux.",
+      action: "Rien à faire aujourd'hui, juste lire mon mot avec un sourire. Hmm hmm hmm. Tu es le petit soleil qui rythme mes jours, et parfois mes nuits, ça fait presque 4 ans maintenant. Et franchement je vois même pas le temps passer. C'est comme un bon film qui dure très longtemps, on veut que jamais ça s'arrête. Profite bien de ton samedi, je t'aime fort. Boubou ❤️"
     },
     {
       id: 7,
@@ -57,9 +57,9 @@ export const useGifts = (): Gift[] => {
     },
     {
       id: 9,
-      name: "Danse 5 min",
-      description: "Danse cinq minutes sur ta chanson préférée.",
-      action: "Lance la musique, je t'envoie un GIF pour applaudir."
+      name: "Masque gourmand",
+      description: "Je te prépare un masque visage maison.",
+      action: "Installe-toi confortablement, je t'apporte tout le nécessaire. Et je participe !"
     },
     {
       id: 10,
