@@ -77,7 +77,7 @@ export const useGifts = (): Gift[] => {
       id: 12,
       name: "Mario Kart",
       description: "On fait une course de Mario Kart ensemble.",
-      action: "Celui qui perd doit tourner une vidéo où il chante une chanson ridicule et la poste sur les réseaux."
+      action: "Celui qui perd doit répondre à une question au choix."
     },
     {
       id: 13,
