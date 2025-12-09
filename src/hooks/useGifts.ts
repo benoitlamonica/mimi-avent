@@ -63,9 +63,9 @@ export const useGifts = (): Gift[] => {
     },
     {
       id: 10,
-      name: "Petit soin",
-      description: "Je gère une corvée pour toi (aspirateur, linge ou vaisselle).",
-      action: "Choisis la corvée, je m'en charge."
+      name: "Enigme",
+      description: "Mon tout a 5 lettres. Si tu retires mes deux dernières lettres, il reste un son qu’on fait pour essayer de faire peur (mais en version mignonne). Si tu ne gardes que mes deux dernières lettres, on obtient la 3ème note de la gamme majeure. Je suis né un 27 février. Qui suis-je ?",
+      action: "Envoie moi la réponse par message. Si tu réponds juste, tu gagnes un bisou surprise !"
     },
     {
       id: 11,
