@@ -111,33 +111,33 @@ export const useGifts = (): Gift[] => {
     },
     {
       id: 18,
-      name: "Balade en visio",
-      description: "Appel vidéo pendant la balade pour me montrer ta rue.",
-      action: "Fais le tour et commente en direct."
+      name: "C'est l'heure du QUIZZ",
+      description: "Voici un quizz surprise sur moi.",
+      action: "Réponds aux questions et découvre ton score ! https://forms.gle/3y3Y6YxX4Y6Z7o9F6"
     },
     {
       id: 19,
       name: "Playlist surprise",
       description: "Aujourd'hui c'est toi qui décide ce que j'écoute.",
-      action: "Envoie-moi 5 chansons à ajouter à ma playlist."
+      action: "Envoie-moi 5 chansons à découvrir."
     },
     {
       id: 20,
       name: "Les fleurs",
-      description: "Tu as gagné des belle fleurs, virtuelles ou réelles selon la distance.",
+      description: "C'est la journée du bouquet de fleurs. En plus ça fait longtemps que je ne t'en ai pas offert !",
       action: "Reçois une photo de fleurs fraîches."
     },
     {
       id: 21,
-      name: "Chasse photo",
-      description: "Je te donne 3 objets à trouver et photographier.",
-      action: "Envoie les photos dans la journée."
+      name: "Chasse aux objets",
+      description: "3 objets de la maison à retrouver.",
+      action: "J'ai caché 3 objets dans la maison. Trouve-les tous pour gagner un câlin surprise !"
     },
     {
       id: 22,
-      name: "Recette test",
-      description: "Je t'envoie une recette simple à tester.",
-      action: "Cuis-la et envoie une photo du résultat."
+      name: "Rocket",
+      description: "La photo impossible",
+      action: "Envoie moi une photo de rocket qui tire la langue. Bon courage !"
     },
     {
       id: 23,
@@ -148,7 +148,7 @@ export const useGifts = (): Gift[] => {
     {
       id: 24,
       name: "Merci + surprise",
-      description: "Merci d'avoir suivi ce calendrier virtuel.",
+      description: "Merci d'avoir suivi ce calendrier virtuel. J'espère que ça t'a plu ! J'ai pris beaucoup de plaisir à le préparer pour toi ❤️",
       action: "Envoie moi ce message : 'Boubou président !' et tu recevras une petite surprise."
     },
   ];
