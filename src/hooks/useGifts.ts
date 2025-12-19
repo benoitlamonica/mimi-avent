@@ -123,9 +123,9 @@ export const useGifts = (): Gift[] => {
     },
     {
       id: 20,
-      name: "Les fleurs",
-      description: "C'est la journée du bouquet de fleurs. En plus ça fait longtemps que je ne t'en ai pas offert !",
-      action: "Reçois une photo de fleurs fraîches."
+      name: "Compliments",
+      description: "Voici une liste de compliments rien que pour toi.",
+      action: "Rien à faire aujourd'hui, juste lire et sourire : Tu es une femme incroyable, mon rayon de soleil quand il fait froid (surtout dans ton appart), mais pas seulement, tu fais briller les gens autour de toi. Tu es tellement attentionnée, tu rends mes journées meilleures (bon mes nuits ça se discute le canapée est pas super confortable...). Au delà de ta beauté extérieure, c'est ta gentillesse et ta générosité qui me font craquer chaque jour un peu plus. Je suis l'homme le plus chanceux et tu es la femme la plus incroyable que je connaisse ❤️"
     },
     {
       id: 21,
